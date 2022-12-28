@@ -43,21 +43,24 @@ module.exports = {
               // optipng.enabled: false will disable optipng
               optipng: {
                 enabled: true,
-                },
-                pngquant: {
-                  quality: [0.65, 0.90],
-                  speed: 4
-                },
-                gifsicle: {
-                  interlaced: false,
-                },
-                // the webp option will enable WEBP
-                webp: {
-                  quality: 75
-                }
-              }
+              },
+              pngquant: {
+                quality: [0.65, 0.90],
+                speed: 4
+              },
+              jpegtran: {
+                progressive: true
+              },
+              gifsicle: {
+                optimizationLevel: 3
+              },
+              // // the webp option will enable WEBP
+              // webp: {
+              //   quality: 75
+              // }
             }
-            // image-webpack-loader는 이미지 사이즈를 줄여주는 역할을 한다
+          }
+          // image-webpack-loader는 이미지 사이즈를 줄여주는 역할을 한다
         ],
       },
     ]
