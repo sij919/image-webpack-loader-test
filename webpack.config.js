@@ -31,7 +31,7 @@ module.exports = {
         test: /\.(gif|png|jpe?g|svg)$/i,
         // jpe?g는 jpg와 jpeg를 의미한다
         use: [
-          'file-loader?name=assets/images/[name].[ext]',
+          'file-loader?name=assets/[folder]/[name].[ext]',
           // file-loader는 이미지 파일의 이름을 만들고 폴더를 이동시키는 기능을 한다
           {
             loader: 'image-webpack-loader',
