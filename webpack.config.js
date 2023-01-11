@@ -27,7 +27,7 @@ module.exports = {
           extensions: ['', '.js', '.jsx'],
         },
       },
-			/* css, sa[c]ss - style-loader(css-loader, sass-loader) 설정 */
+			/* sa[c]ss - style-loader(css-loader, sass-loader) 설정 */
       {
         test: /\.s[ac]ss/i,
         use: [
@@ -86,11 +86,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'public', 'index.html'),
     }),
+    new CleanWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),
   ],
   devServer: {
     hot: true,
     host: 'localhost',
-    port: 3000,
+    port: 3001,
   },
 };
