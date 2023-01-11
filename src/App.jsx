@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import img01 from './assets/images/png/img01.png';
 import img02 from './assets/images/gif/img02.gif';
 import img03 from './assets/images/jpg/img03.jpg';
